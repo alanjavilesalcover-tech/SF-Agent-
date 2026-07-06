@@ -3,64 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sntledge — Knowledge, distilled</title>
-  <meta name="description" content="Sntledge helps you capture, organize, and share what you know." />
+  <title>Blog — Sntledge</title>
+  <meta name="description" content="The Sntledge blog." />
   <link rel="preconnect" href="https://app.trysoro.com" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    header {
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    #soro-blog {
+      min-height: 240px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">Sntledge</a>
-    <nav class="nav">
-      <a href="/#features">Features</a>
-      <a href="/blog">Blog</a>
-      <a class="btn btn-sm" href="/#cta">Get started</a>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Blog</h1>
+    </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Sntledge.app</p>
-      <h1>Knowledge, distilled.</h1>
-      <p class="lede">
-        Capture what you learn, organize it effortlessly, and publish a
-        beautiful blog in minutes — no code required.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="/#cta">Get started free</a>
-        <a class="btn btn-ghost" href="/blog">Read the blog</a>
-      </div>
-    </section>
-
-    <section id="features" class="features">
-      <div class="feature">
-        <h3>Capture</h3>
-        <p>Save notes, links, and ideas in one calm, searchable place.</p>
-      </div>
-      <div class="feature">
-        <h3>Organize</h3>
-        <p>Tags and collections keep everything exactly where you expect it.</p>
-      </div>
-      <div class="feature">
-        <h3>Publish</h3>
-        <p>Turn your knowledge into a live blog with a single embed.</p>
-      </div>
-    </section>
-
-    <section id="cta" class="cta">
-      <h2>Ready to start?</h2>
-      <p>Set up your Sntledge blog in minutes.</p>
-      <a class="btn" href="/blog">See it in action</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <span>&copy; <span id="year"></span> Sntledge.app</span>
-    <a href="/blog">Blog</a>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <!-- Soro blog widget embed -->
+    <div id="soro-blog"></div>
+    <script src="https://app.trysoro.com/api/embed/48d6c064-0473-44d0-a091-c5cf49927df5" defer></script>
+  </div>
 </body>
 </html>
