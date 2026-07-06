@@ -3,47 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Sntledge</title>
-  <meta name="description" content="The Sntledge blog." />
-  <link rel="preconnect" href="https://app.trysoro.com" />
+  <title>How to Stop Revenge Trading — Sntledge</title>
+  <meta name="description" content="Revenge trading is a breakdown in decision quality, not just frustration. Here's a system to catch the pattern before it reaches your account." />
   <style>
     :root {
       color-scheme: light dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --bg: #ffffff;
+      --fg: #16161a;
+      --muted: #5c5c66;
+      --border: #e7e7ec;
+      --accent: #6d5cff;
+      --measure: 40rem;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0e0e12; --fg: #ececef; --muted: #9a9aa6; --border: #26262e; --accent: #9385ff; }
+    }
+    :root[data-theme="light"] { --bg: #ffffff; --fg: #16161a; --muted: #5c5c66; --border: #e7e7ec; --accent: #6d5cff; }
+    :root[data-theme="dark"]  { --bg: #0e0e12; --fg: #ececef; --muted: #9a9aa6; --border: #26262e; --accent: #9385ff; }
+
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      line-height: 1.6;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--sans);
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
-    .wrap {
-      max-width: 720px;
+
+    .site-head {
+      max-width: var(--measure);
       margin: 0 auto;
-      padding: 48px 20px 80px;
+      padding: 28px 20px 0;
     }
-    header {
-      margin-bottom: 32px;
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    article {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 40px 20px 96px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 0.75rem;
+      margin: 0 0 14px;
     }
     h1 {
-      font-size: 2rem;
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.12;
       letter-spacing: -0.02em;
-      margin: 0;
+      text-wrap: balance;
+      margin: 0 0 16px;
     }
-    #soro-blog {
-      min-height: 240px;
+    .byline {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0 0 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    article p {
+      margin: 0 0 20px;
+      font-size: 1.075rem;
+    }
+    article h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin: 44px 0 14px;
+      text-wrap: balance;
+    }
+
+    .site-foot {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Blog</h1>
-    </header>
+  <header class="site-head">
+    <a class="brand" href="/">Sntledge</a>
+  </header>
 
-    <!-- Soro blog widget embed -->
-    <div id="soro-blog"></div>
-    <script src="https://app.trysoro.com/api/embed/48d6c064-0473-44d0-a091-c5cf49927df5" defer></script>
-  </div>
+  <article>
+    <p class="eyebrow">Trading Psychology</p>
+    <h1>How to Stop Revenge Trading</h1>
+    <p class="byline">July 6, 2026 &middot; 7 min read</p>
+
+    <p>You know the moment. A clean setup fails, price tags your stop, and within seconds you are back in the market with bigger size, worse timing, and zero patience. That is exactly why traders search for how to stop revenge trading - not because they lack strategy, but because they keep breaking it when emotion takes over.</p>
+    <p>Revenge trading is not just frustration showing up on the chart. It is a breakdown in decision quality. You stop trading your edge and start trading your pain. For retail traders and prop firm traders, that shift is expensive fast. One emotional trade turns into three. Three turns into a rule violation, a daily drawdown breach, or a week spent trying to recover from one bad hour.</p>
+    <p>If you want to stop it, you need more than a motivational quote and more than another promise to stay disciplined. You need a system that catches the pattern before it reaches your account.</p>
+
+    <h2>Why revenge trading feels so hard to control</h2>
+    <p>The hardest part about revenge trading is that it often feels rational while it is happening. You tell yourself the market still owes you the move. You convince yourself the stop-out was bad luck, not bad timing. You think the next entry will fix the damage if you act fast enough.</p>
+    <p>That is the trap. Revenge trading creates a false sense of urgency. Your focus shifts from process to recovery. Instead of asking, &quot;Is this within my plan?&quot; you ask, &quot;How do I get that money back right now?&quot;</p>
+    <p>For active traders, especially in Forex, Gold, and indices, this gets worse because the market keeps printing opportunities. There is always another candle, another breakout, another fake reason to press the button. If you already trade frequently, emotional impulses can hide inside normal activity. The behavior does not always look dramatic at first. Sometimes it looks like a small rules bend after a loss, then a slightly oversized position, then a late-session trade that never should have happened.</p>
+
+    <h2>How to stop revenge trading starts with pattern recognition</h2>
+    <p>Most traders try to fix revenge trading at the point of explosion. That is too late. The real work is identifying the pattern before the impulsive trade happens.</p>
+    <p>Your revenge sequence usually begins before the entry. It might start when you get stopped twice in one session. It might start when you miss a move and then chase the next one with too much size. It might start after a winning streak when one loss feels offensive because your confidence was inflated.</p>
+    <p>The setup is emotional, but the pattern is measurable.</p>
+    <p>Look at your last 20 losing days and find the repeated signals. Did the biggest damage happen after your first loss or after your second? Did you size up after a stop-out? Did you keep trading outside your best session? Did you abandon your A setup and start taking anything that moved?</p>
+    <p>This is where serious traders separate intention from reality. You may believe revenge trading is random. Your data will usually show it is predictable.</p>
+
+    <h2>Build a hard stop, not a soft promise</h2>
+    <p>If your current plan for emotional control is &quot;I just need to be more disciplined,&quot; that plan is weak. Soft promises fail under pressure. Hard rules survive it.</p>
+    <p>The fastest way to reduce revenge trading is to create non-negotiable shutdown conditions. For example, if you take two losses in a row, you stop for 30 minutes. If you hit your daily loss cap, the platform closes and stays closed. If you break one execution rule, no more discretionary trades that session.</p>
+    <p>This is not about being dramatic. It is about protecting decision quality when your brain is no longer objective.</p>
+    <p>A lot of traders resist hard stops because they fear missing the next valid move. That fear is real, but the trade-off matters. Missing one good trade hurts less than taking four bad ones on tilt. In prop environments, this matters even more. The trader who can preserve the account gets another day. The trader who chases losses may not.</p>
+
+    <h2>Cut the recovery mindset</h2>
+    <p>One of the biggest drivers of revenge trading is the need to get back to breakeven before the day ends. That mindset quietly destroys discipline because it turns the session into a rescue mission.</p>
+    <p>The market does not care where your PnL sits. It does not care that you are down 0.8% and want to finish green. Once you make emotional recovery the goal, you stop evaluating trades on edge and start evaluating them on emotional relief.</p>
+    <p>That is why some of the best anti-revenge rules have nothing to do with entries. They change the meaning of the day. A red day that followed your plan is a successful day. A green day built on impulsive rule-breaking is a dangerous day. One reinforces edge. The other reinforces self-sabotage.</p>
+    <p>This sounds simple, but it is hard in practice because traders are wired to score themselves by outcomes. That is exactly why you need to track process separately from PnL. If you do not, your emotions will keep treating random short-term results as proof of whether your behavior was acceptable.</p>
+
+    <h2>Change your environment before you change your psychology</h2>
+    <p>Traders often attack revenge trading as a pure mindset problem. Mindset matters, but environment matters more than most people admit.</p>
+    <p>If your broker is open, your charts are up, and you are staring at price after a loss, the temptation is active. You are asking willpower to beat access. That is not smart risk management.</p>
+    <p>A better move is to make revenge trading harder to execute. Step away from the desk. Remove one-click trading for the rest of the session. Set a cooldown timer. Write down the exact reason for the last loss before you are allowed to re-enter. Force a break between emotion and action.</p>
+    <p>Even small frictions help. Revenge trades thrive on speed. They lose power when you slow the sequence down.</p>
+    <p>This is also where behavioral tools can change outcomes. A platform like Sentinel can detect recurring rule-breaking patterns such as post-loss oversizing or trading outside your proven hours, then flag the behavior before it spirals. That matters because most traders do not need more chart knowledge. They need intervention at the moment discipline starts slipping.</p>
+
+    <h2>Create a revenge trading reset protocol</h2>
+    <p>When emotion hits, you should not be inventing your response in real time. Build a reset protocol now, while you are calm.</p>
+    <p>A good reset protocol is short, specific, and impossible to misunderstand. After any emotionally significant loss, do three things in order. First, mark whether the trade was valid or invalid by your plan. Second, step away for a fixed amount of time. Third, return only if the next setup meets your checklist with normal size.</p>
+    <p>That last part matters. Revenge trading often shows up through size before it shows up through setup quality. Traders know the entry is questionable, so they try to make up for it with aggression. Bigger size creates the illusion of control. In reality, it magnifies poor judgment.</p>
+    <p>If you want a cleaner rule, use this one: after a loss, the next trade must be smaller or equal size, never larger. That single constraint can stop a lot of account damage.</p>
+
+    <h2>Fix the hidden causes of revenge behavior</h2>
+    <p>Not every revenge trader looks the same. Some are triggered by losses. Others are triggered by missed moves, boredom, lack of sleep, or overconfidence after a hot streak. If you only focus on the moment you snap, you may miss the conditions that made the snap more likely.</p>
+    <p>Ask harder questions. Are you trading too many sessions and arriving mentally drained? Are you taking mediocre setups because your standards are loose? Are you carrying unrealistic daily income goals that pressure you into forcing trades?</p>
+    <p>It depends on your style, but revenge trading usually gets worse when your process is already unstable. Fatigue lowers patience. Loose rules invite justification. Financial pressure turns every loss into a threat. Fixing those inputs will not eliminate emotion, but it reduces the number of moments where emotion can take control.</p>
+
+    <h2>How disciplined traders actually recover</h2>
+    <p>Disciplined traders still feel the urge to revenge trade. The difference is not that they are emotionless. The difference is that they do not give the urge authority.</p>
+    <p>They trust data over impulse. They know one trade does not define the day, and one day does not define the month. They understand that protecting capital is part of edge, not separate from it. Most of all, they respect the damage a tilted mind can do.</p>
+    <p>That is why the goal is not to become perfectly calm. The goal is to become hard to knock off process.</p>
+    <p>You do that by making your rules visible, your triggers measurable, and your intervention immediate. You review losing streaks. You identify the exact sequence that leads to bad decisions. You put barriers between frustration and execution. You stop pretending awareness alone is enough.</p>
+    <p>Revenge trading is not proof that you are incapable. It is proof that your current system does not protect you when pressure spikes. Change the system, and the behavior starts to change with it.</p>
+    <p>The next time the market stops you out and your chest tightens, do not ask how fast you can win it back. Ask whether your next action protects your edge or attacks it. That one question can save an account.</p>
+  </article>
+
+  <footer class="site-foot">
+    &copy; 2026 Sntledge
+  </footer>
 </body>
 </html>
