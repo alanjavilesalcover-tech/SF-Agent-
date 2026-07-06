@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Sntledge</title>
+  <meta name="description" content="Articles and updates from Sntledge." />
+  <link rel="preconnect" href="https://app.trysoro.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Sntledge</a>
+    <nav class="nav">
+      <a href="/#features">Features</a>
+      <a href="/blog.html" aria-current="page">Blog</a>
+      <a class="btn btn-sm" href="/#cta">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-header">
+      <p class="eyebrow">Sntledge Blog</p>
+      <h1>Latest articles</h1>
+      <p class="lede">Thoughts, updates, and guides — powered by Soro.</p>
+    </section>
+
+    <!-- Soro blog widget embed -->
+    <section class="blog-embed">
+      <div id="soro-blog"></div>
+      <script src="https://app.trysoro.com/api/embed/48d6c064-0473-44d0-a091-c5cf49927df5" defer></script>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; <span id="year"></span> Sntledge.app</span>
+    <a href="/">Home</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

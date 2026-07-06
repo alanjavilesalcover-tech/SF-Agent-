@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sntledge — Knowledge, distilled</title>
+  <meta name="description" content="Sntledge helps you capture, organize, and share what you know." />
+  <link rel="preconnect" href="https://app.trysoro.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Sntledge</a>
+    <nav class="nav">
+      <a href="/#features">Features</a>
+      <a href="/blog.html">Blog</a>
+      <a class="btn btn-sm" href="/#cta">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Sntledge.app</p>
+      <h1>Knowledge, distilled.</h1>
+      <p class="lede">
+        Capture what you learn, organize it effortlessly, and publish a
+        beautiful blog in minutes — no code required.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="/#cta">Get started free</a>
+        <a class="btn btn-ghost" href="/blog.html">Read the blog</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature">
+        <h3>Capture</h3>
+        <p>Save notes, links, and ideas in one calm, searchable place.</p>
+      </div>
+      <div class="feature">
+        <h3>Organize</h3>
+        <p>Tags and collections keep everything exactly where you expect it.</p>
+      </div>
+      <div class="feature">
+        <h3>Publish</h3>
+        <p>Turn your knowledge into a live blog with a single embed.</p>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <h2>Ready to start?</h2>
+      <p>Set up your Sntledge blog in minutes.</p>
+      <a class="btn" href="/blog.html">See it in action</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; <span id="year"></span> Sntledge.app</span>
+    <a href="/blog.html">Blog</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
