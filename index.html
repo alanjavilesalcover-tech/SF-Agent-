@@ -91,6 +91,26 @@
       text-wrap: balance;
     }
 
+    .more-posts {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 8px 20px 40px;
+    }
+    .more-posts h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 40px 0 6px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .more-posts .sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 24px;
+    }
+    #soro-blog { min-height: 120px; }
+
     .site-foot {
       max-width: var(--measure);
       margin: 0 auto;
@@ -165,6 +185,14 @@
     <p>Revenge trading is not proof that you are incapable. It is proof that your current system does not protect you when pressure spikes. Change the system, and the behavior starts to change with it.</p>
     <p>The next time the market stops you out and your chest tightens, do not ask how fast you can win it back. Ask whether your next action protects your edge or attacks it. That one question can save an account.</p>
   </article>
+
+  <section class="more-posts">
+    <h2>More from the blog</h2>
+    <p class="sub">New articles published in Soro appear here automatically.</p>
+    <!-- Soro blog widget embed -->
+    <div id="soro-blog"></div>
+    <script src="https://app.trysoro.com/api/embed/48d6c064-0473-44d0-a091-c5cf49927df5" defer></script>
+  </section>
 
   <footer class="site-foot">
     &copy; 2026 Sntledge
